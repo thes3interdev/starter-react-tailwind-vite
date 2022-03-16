@@ -23,8 +23,12 @@ FROM nginx:stable-alpine as production-stage
 # copy built artifacts to production folder
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
+# prepare nginx
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d
+
 # make the container port accessible externally
-EXPOSE 80
+EXPOSE 8080
 
 # start the service
 CMD ["nginx", "-g", "daemon off;"]
