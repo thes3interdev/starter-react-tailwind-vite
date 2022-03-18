@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import HomePage from './pages/HomePage';
+import PageHome from './pages/PageHome';
 
 /** configure the apollo client */
 const client = new ApolloClient({
@@ -18,7 +18,7 @@ const App = () => {
 				<div>
 					<div className="content">
 						<Routes>
-							<Route path="/" element={<HomePage />} />
+							<Route path="/" element={<PageHome />} />
 						</Routes>
 					</div>
 				</div>

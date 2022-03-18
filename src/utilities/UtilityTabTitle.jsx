@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-const TabTitle = (pageTitle) => {
+const UtilityTabTitle = (pageTitle) => {
 	return (document.title = pageTitle);
 };
 
-TabTitle.propTypes = {
+UtilityTabTitle.propTypes = {
 	pageTitle: PropTypes.string.isRequired,
 };
 
-export default TabTitle;
+export default UtilityTabTitle;

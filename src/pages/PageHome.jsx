@@ -1,7 +1,7 @@
-import TabTitle from '../utilities/TabTitle';
+import UtilityTabTitle from '../utilities/UtilityTabTitle';
 
-const HomePage = () => {
-	TabTitle('Home Page | Superior Software Solutions');
+const PageHome = () => {
+	UtilityTabTitle('Home Page | Superior Software Solutions');
 
 	return (
 		<div>
@@ -14,4 +14,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default PageHome;
