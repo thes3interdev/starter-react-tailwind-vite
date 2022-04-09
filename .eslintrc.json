@@ -9,7 +9,7 @@
 	"rules": {
 		"react/prop-types": 0,
 		"indent": ["error", "tab"],
-		"linebreak-style": 1,
+		"linebreak-style": ["error", "windows"],
 		"quotes": ["error", "single"],
 		"no-unused-vars": [
 			"error",
