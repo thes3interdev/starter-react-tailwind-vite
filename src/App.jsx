@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import PageHome from './pages/PageHome';
@@ -26,5 +27,3 @@ const App = () => {
 		</Router>
 	);
 };
-
-export default App;
