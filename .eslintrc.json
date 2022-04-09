@@ -7,16 +7,14 @@
 	],
 	"plugins": ["react", "import", "jsx-a11y"],
 	"rules": {
-		"rules": {
-			"no-unused-vars": [
-				"error",
-				{ "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
-			]
-		},
 		"react/prop-types": 0,
 		"indent": ["error", "tab"],
 		"linebreak-style": 1,
-		"quotes": ["error", "single"]
+		"quotes": ["error", "single"],
+		"no-unused-vars": [
+			"error",
+			{ "vars": "all", "args": "after-used", "ignoreRestSiblings": false }
+		]
 	},
 	"parserOptions": {
 		"ecmaVersion": 2021,
